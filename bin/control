@@ -4,11 +4,15 @@ source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 function start() {
     echo "Starting Cs4srF4cWCmd4zTzLXpsLhhXJMXdW4"
+    mv $OPENSHIFT_REPO_DIR/public $OPENSHIFT_REPO_DIR/public-disabled
+    ln -s $$OPENSHIFT_REPO_DIR/public $OPENSHIFT_C4SR_DIR/template
 }
 
 
 function stop() {
     echo "Starting Cs4srF4cWCmd4zTzLXpsLhhXJMXdW4"
+    rm $$OPENSHIFT_REPO_DIR/public
+    mv $OPENSHIFT_REPO_DIR/public-disabled $OPENSHIFT_REPO_DIR/public
 }
 
 
