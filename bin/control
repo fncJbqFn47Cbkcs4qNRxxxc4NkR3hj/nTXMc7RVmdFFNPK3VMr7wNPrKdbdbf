@@ -1,0 +1,51 @@
+#!/bin/bash
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+function start() {
+    echo "Starting Cs4srF4cWCmd4zTzLXpsLhhXJMXdW4"
+}
+
+
+function stop() {
+    echo "Starting Cs4srF4cWCmd4zTzLXpsLhhXJMXdW4"
+}
+
+
+function restart() {
+    echo "Restarting Cs4srF4cWCmd4zTzLXpsLhhXJMXdW4"
+    stop
+    start
+}
+
+
+function status() {
+    client_result "Cs4srF4cWCmd4zTzLXpsLhhXJMXdW4 is nothing"
+}
+
+
+function reload() {
+    echo "Cannot reload Cs4srF4cWCmd4zTzLXpsLhhXJMXdW4"
+}
+
+
+function tidy() {
+    client_message "Cannto tidy Cs4srF4cWCmd4zTzLXpsLhhXJMXdW4"
+}
+
+
+function update() {
+    echo "Rebuilding Cs4srF4cWCmd4zTzLXpsLhhXJMXdW4"
+}
+
+
+case "$1" in
+  start)     start ;;
+  stop)      stop ;;
+  restart)   restart ;;
+  status)    status ;;
+  reload)    reload ;;
+  tidy)      tidy ;;
+  update)    update ;;
+  *)         exit 0
+esac
